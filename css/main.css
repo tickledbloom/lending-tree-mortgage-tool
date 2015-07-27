@@ -1,0 +1,465 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+#LTdisclosureText {
+    font-size: 10px;
+    color: #999;
+    position: relative;
+    left: -15px;
+    clear: both;
+    top: 5px;
+}
+#loan-type-filter option {
+    display: none;
+}
+.filter-selector {
+    width: 195px;
+    height: 32px;
+    font-size: 12px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+}
+#filter-row {
+    float: left;
+    clear: both;
+    height: 85px;
+    width: 700px;
+    background: url(../images/PoweredByLT_140x40.png) no-repeat top right;
+}
+#subNav {
+    left: 55% !important;
+}
+.hide-more-options {
+    display: none !important;
+}
+.compress-loan-container {
+    width: 160px !important;
+    box-shadow: none !important;
+}
+.show-more-options {
+    display: block !important;
+}
+.expand-loan-container {
+    width: 550px !important;
+    box-shadow: 1px 1px 13px #999999;
+}
+.star-rating {
+    height: 15px;
+    width: 80px;
+    background: url('../images/star-progress-small.png') repeat-x scroll 0% 0% transparent;
+    float: right;
+    position: absolute;
+    top: 125px;
+    left: 95px;
+}
+.star-rating span {
+    background: url('../images/star-progress-small.png') repeat-x -16px -15px;
+    width: 100%;
+    height: 15px;
+    display: inline-block;
+}
+.lender-name-yellow {
+    color: #C09805;
+    font-weight: bold;
+    font-size: 15px;
+}
+#overlay-numbers-details {
+    float: left;
+    width: 460px;
+}
+#overlay-lender-details {
+    float: right;
+}
+#overlay-lender-details img {
+    width: 160px;
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+    margin: 5px 0;
+    height: 70px;
+}
+#top-logo {
+    background: #7ac043;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: relative;
+    top: 12px;
+    color: #ffffff;
+    font-size: 25px;
+}
+#pageDiv {
+    background-color: #e2eaee;
+}
+#loading-screen {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 100px;
+    height: 800px;
+    width: 600px;
+}
+#down-payment-calc {
+    padding: 10px 0px 0px 5px;
+    font-size: 15px;
+}
+.purchase-only {
+    display: none;
+}
+.sample-overlay {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.toll-free-number {
+    color: #666666;
+    font-size: 8pt;
+    display: inline-block;
+    padding-top: 5px;
+}
+#search-for-offers {
+    clear: both;
+    padding-top: 10px;
+}
+#select-less-options,
+#select-more-options {
+    display: none;
+}
+.extra-container {
+    display: none;
+}
+#error-results {
+    text-align: center;
+    display: none;
+    margin-top: 80px;
+    padding: 20px;
+}
+.search-container {
+    float: left;
+    padding-right: 25px;
+}
+#error-results p {
+    font-size: 22px;
+}
+.nmls {
+    float: right;
+    padding-right: 17px;
+    font-size: 11px;
+    margin-top: 2px;
+    color: #999999;
+}
+.lender-section {
+    float: left;
+    width: 175px;
+}
+#third-party {
+    color: #BEBEBE;
+    font-size: 8pt;
+    font-style: italic;
+}
+.black-line-class {
+    height: 2px !important;
+}
+.black-line {
+    border-bottom: 1px solid black;
+}
+.forced-indent {
+    padding-left: 40px;
+    font-style: italic;
+}
+#more-values-table {
+    width: 600px;
+    font-size: 13px;
+    color: #666666;
+}
+.details-header {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+#more-values-table tr {
+    height: 22px;
+}
+#lender-contact-info {
+    border-top: 1px solid #CCCCCC;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#main-details {
+    float: left;
+}
+#lender-contact-info {
+    float: left;
+}
+#overlay-detail {
+    width: 710px;
+    height: 750px;
+    padding: 20px;
+    text-align: left;
+}
+.rates-detail,
+.apr-detail {
+    float: left;
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 30px 0px 0px;
+}
+.rates-detail span,
+.apr-detail span {
+    font-size: 17px;
+    font-weight: normal;
+    color: #888888;
+    position: relative;
+    top: -30px;
+}
+.rates-fees-detail {
+    clear: both;
+    font-size: 31px;
+    position: relative;
+    top: -15px;
+}
+.rates-fees-detail span {
+    font-size: 17px;
+    padding-right: 20px;
+}
+.overlay {
+    background: #ffffff;
+    height: 100% !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+    width: 100%;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    padding: 0 !important;
+    border: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: 0 0 !important;
+    -moz-box-shadow: none !important;
+    box-shadow: 0 0 !important;
+    box-shadow: none !important;
+    display: none;
+}
+#close-button {
+    background: url('../images/close-button.png') no-repeat;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 725px;
+    top: 5px;
+    cursor: pointer;
+}
+#sampleContainer img {
+    padding: 10px;
+}
+#sampleContainer {
+    position: absolute;
+    display: none;
+    top: 20px;
+    z-index: 9999;
+    text-align: center;
+    left: 20%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 1px 11px 1px #000000;
+    -webkit-box-shadow: 0px 1px 11px 1px #000000;
+    box-shadow: 0px 1px 11px 1px #000000;
+}
+#top-spacer {
+    background-color: #7ac043;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #cccccc;
+    height: 30px;
+}
+#loan-options-container span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #7ac043;
+}
+.btn-primary {
+    text-decoration: none !important;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px #CCCCCC;
+    padding: 8px 13px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #faa732;
+    *background-color: #f89406;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+    background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+    background-image: -o-linear-gradient(top, #fbb450, #f89406);
+    background-image: linear-gradient(to bottom, #fbb450, #f89406);
+    background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+    background-repeat: repeat-x;
+    border-color: #f89406 #f89406 #ad6704;
+    border-color: rgba(0, 0, 0, .1) rgba(0, 0, 0, .1) rgba(0, 0, 0, .25);
+    filter: progid: dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+    filter: progid: dximagetransform.microsoft.gradient(enabled=false)
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active {
+    color: #fff;
+    background-color: #f89406;
+    *background-color: #df8505
+}
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #c67605
+}
+.btn-primary.disabled,
+.btn-primary[disabled] {
+    cursor: default;
+    background-color: #e6e6e6;
+    background-image: none;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+.offer-row {
+    display: block;
+    margin: 0 0 20px 0;
+    border-top: 1px solid #cccccc;
+    padding: 10px 15px;
+    clear: both;
+    position: relative;
+    height: 105px;
+}
+#creditsavings {
+    display: none;
+}
+#main-loan-container {
+    min-height: 1000px;
+    background-color: #FFFFFF;
+    -pie-background: #ffffff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 2px 9px #999;
+    position: relative;
+}
+#lendingTree {
+    color: #333333;
+    padding-top: 35px;
+    height: 100%;
+    clear: both;
+    margin: 0px auto;
+    width: 950px;
+}
+#loan-options-container {
+    background-color: #ECF2F0;
+    padding: 20px;
+    position: absolute;
+    width: 160px;
+    height: 500px;
+    z-index: 2 !important;
+    border-radius: 15px;
+    top: 15px;
+}
+#loan-options-container.fixed-options {
+    position: fixed;
+}
+#loan-options-container.bottom-fixed-options {
+    position: fixed;
+    top: -70px;
+}
+#customize-loan {
+    width: 125px;
+    font-size: 33px;
+    margin-left: 30px;
+    font-family: "Trebuchet MS", serif;
+    float: left;
+}
+.loan-options-select {
+    width: 155px;
+    margin-top: 15px;
+}
+.loan-options-select input[type=text] {
+    padding: 7px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 145px;
+}
+.loan-label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-bottom: 5px;
+}
+.loan-selector {
+    width: 160px;
+    height: 35px;
+    font-size: 15px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    margin-top: 5px;
+}
+.apr,
+.rates {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    float: left;
+    width: 120px;
+    padding-top: 10px;
+}
+.apr span,
+.rates span {
+    font-size: 13px;
+    position: relative;
+    top: -13px;
+    font-weight: normal;
+}
+.rates-fees {
+    float: left;
+    font-size: 13px;
+    margin: 13px 5px 0px 8px;
+}
+#offerResults {
+    float: right;
+    width: 700px;
+    padding-left: 20px;
+    height: 100%;
+}
+.offer-row img {
+    float: left;
+    width: 140px;
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+    margin: 10px 20px 0px 0px;
+    max-height: 70px;
+}
+.contact-details {
+    float: left;
+    margin: 10px 0px 0px 10px;
+    text-align: right;
+    width: 125px;
+}
+.lender-phone {
+    font-size: 19px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 3px;
+}

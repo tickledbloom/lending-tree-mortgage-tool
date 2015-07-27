@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Lending Tree Mortgage Rates Search Finder</title>
+</head>
+
+<body>
+    <section id="lendingTree" class="content">
+        <div id="top-logo">Compare Mortgage Rates &amp; Lenders</div>
+        <div id="main-loan-container">
+            <div id="loan-options-container">
+                <div><span>Customize Your Loan Search</span>
+                    <p>
+                        <br/><a id="small-disclosure-link">*Disclosure</a></p>
+                </div>
+                <div class="search-container">
+                    <div class="loan-options-select">
+                        <label class="loan-label">Loan Purpose</label>
+                        <select class="loan-selector" id="loan-purpose-selector">
+                            <option value="1">Refinance</option>
+                            <option value="2">Purchase</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Estimated Property Value</label>
+                        <input type="text" class="needs-formatting" id="estimated-property-value"></input>
+                    </div>
+                    <div class="loan-options-select purchase-only">
+                        <label class="loan-label">Down Payment</label>
+                        <input type="text" id="down-payment-value" class="needs-formatting"></input>
+                        <p id="down-payment-calc">(0%)</p>
+                    </div>
+                    <div class="loan-options-select refinance-only">
+                        <label class="loan-label">Current Loan Balance</label>
+                        <input type="text" class="needs-formatting" id="current-loan-balance-selector"></input>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Estimated Credit</label>
+                        <select class="loan-selector" id="estimated-credit-value">
+                            <option value="1">760-850 (Excellent)</option>
+                            <option value="2">740-759 (Excellent)</option>
+                            <option value="3">720-739 (Good)</option>
+                            <option value="4">700-719 (Good)</option>
+                            <option value="5">680-699 (Fair)</option>
+                            <option value="6">660-679 (Fair)</option>
+                            <option value="7">640-659 (Poor)</option>
+                            <option value="8">620-639 (Poor)</option>
+                            <option value="9">580-619 (Poor)</option>
+                            <option value="10">
+                                < 580 (Poor)</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Zip Code</label>
+                        <input type="text" maxlength="5" id="zip-code-value"></input>
+                    </div>
+                    <div class="loan-options-select">
+                        <a href="#" id="select-more-options" class="show-more-options">More Options</a>
+                        <a href="#" id="select-less-options">Less Options</a>
+                    </div>
+                </div>
+                <div class="search-container extra-container">
+                    <div class="loan-options-select refinance-only">
+                        <label class="loan-label">Additional Cash Out</label>
+                        <input type="text" class="needs-formatting" id="cash-out-value" value="$0"></input>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Eligible for VA loans?</label>
+                        <select class="loan-selector" id="va-status-id">
+                            <option value="1">Not a Veteran</option>
+                            <option value="2">Veteran with a VA Loan</option>
+                            <option value="3">Veteran without a VA Loan</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Filed bankruptcy?</label>
+                        <select class="loan-selector" id="bk-status-id">
+                            <option value="9">Not in last 7 years</option>
+                            <option value="1">Not yet discharged</option>
+                            <option value="2">1 to 12 months ago</option>
+                            <option value="3">13 to 24 months ago</option>
+                            <option value="4">25 to 36 months ago</option>
+                            <option value="5">37 to 48 months ago</option>
+                            <option value="6">49 to 60 months ago</option>
+                            <option value="7">61 to 72 months ago</option>
+                            <option value="8">73 to 84 months ago</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Had a foreclosure?</label>
+                        <select class="loan-selector" id="foreclosure-status-id">
+                            <option value="9">Not in last 7 years</option>
+                            <option value="1">Currently in foreclosure</option>
+                            <option value="2">1 to 12 months ago</option>
+                            <option value="3">13 to 24 months ago</option>
+                            <option value="4">25 to 36 months ago</option>
+                            <option value="5">37 to 48 months ago</option>
+                            <option value="6">49 to 60 months ago</option>
+                            <option value="7">61 to 72 months ago</option>
+                            <option value="8">73 to 84 months ago</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select refinance-only">
+                        <label class="loan-label">Second Loan Amount</label>
+                        <input type="text" value="$0" class="needs-formatting" id="second-loan-id"></input>
+                    </div>
+                </div>
+                <div class="search-container extra-container">
+                    <div class="loan-options-select">
+                        <label class="loan-label">Property Type</label>
+                        <select class="loan-selector" id="property-type-id">
+                            <option value="1">Single Family</option>
+                            <option value="2">Townhome</option>
+                            <option value="3">Condo</option>
+                            <option value="4">Multi family dwelling</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">How is this home used?</label>
+                        <select class="loan-selector" id="property-use-id">
+                            <option value="1">Primary home</option>
+                            <option value="2">Secondary home</option>
+                            <option value="3">Investment property</option>
+                        </select>
+                    </div>
+                    <div class="loan-options-select">
+                        <label class="loan-label">Loan Type</label>
+                        <br/>
+                        <input type="checkbox" value="1" checked />30 year fixed
+                        <br/>
+                        <input type="checkbox" value="2" />20 year fixed
+                        <br/>
+                        <input type="checkbox" value="3" checked />15 year fixed
+                        <br/>
+                        <input type="checkbox" value="4" />10 year fixed
+                        <br/>
+                        <input type="checkbox" value="5" />7/1 ARM
+                        <br/>
+                        <input type="checkbox" value="6" checked />5/1 ARM
+                        <br/>
+                        <input type="checkbox" value="7" />3/1 ARM
+                    </div>
+                </div>
+                <div id="search-for-offers">
+                    <a class="btn-primary" id="submit-button-offers" href="#">Get Rates</a>
+                </div>
+            </div>
+            <div id="offerResults">
+
+                <div id="filter-row">
+                    <select class="filter-selector" id="loan-type-filter">
+                        <option value="0" style="display:block;">Loan Type: No Filter</option>
+                        <option value="1">Loan Type: 30 year fixed</option>
+                        <option value="2">Loan Type: 20 year fixed</option>
+                        <option value="3">Loan Type: 15 year fixed</option>
+                        <option value="4">Loan Type: 10 year fixed</option>
+                        <option value="5">Loan Type: 7/1 ARM</option>
+                        <option value="6">Loan Type: 5/1 ARM</option>
+                        <option value="7">Loan Type: 3/1 ARM</option>
+                    </select>
+                    <select class="filter-selector" id="other-type-filter">
+                        <option value="0">Sorted By: Most Relevant</option>
+                        <option value="1">Sorted By: Ratings</option>
+                        <option value="2">Sorted By: Rate</option>
+                        <option value="3">Sorted By: Lender</option>
+                        <option value="4">Sorted By: APR</option>
+                    </select>
+                </div>
+                <div id="allOfferRows">
+                    <div id="loading-screen">
+                        <span>Searching for the lowest rates....</span>
+                        <br/>
+                        <img src="images/loading.gif">
+                    </div>
+                    <div id="error-results">
+                        <p>Oops. We have <strong>0</strong> quotes that met your criteria.</p>
+                        <p><span>Modify your search or try again to view quotes.</span></p>
+                    </div>
+                </div>
+
+                <div id="LTdisclosureText">
+                    <a id="second-disclosure"></a>*Rates, APRs, Monthly Payment Amounts, Fees, Points, and Origination data shown in the LendingTree LoanExplorerTM, NMLS#1136, rate table are examples only and do not take into consideration taxes or insurance. If you choose an ARM, your payment will likely increase at the stated interval. Mortgage rate quotes displayed on LendingTree LoanExplorerTM, including loan pricing data, rates and fees, are provided by third party data providers including, but not limited to, Mortech<sup>&reg;</sup>, a registered trademark of Zillow<sup>&reg;</sup>, LoanXEngine, a product of Mortgage Builder Software, Inc., and LoanTek, Inc. For more information go to <a href="https://www.lendingtree.com" target="_blank">www.lendingtree.com</a>.</div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <div id="sampleContainer">
+        <div id="top-spacer">
+            <div id="close-button"></div>
+        </div>
+        <div id="overlay-detail"></div>
+    </div>
+</body>
+
+</html>
